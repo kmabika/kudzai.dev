@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ['media.graphcms.com'],
+    domains: ['media.graphassets.com'],
   },
   eslint: {
     // Warning: Dangerously allow production builds to successfully complete even if
