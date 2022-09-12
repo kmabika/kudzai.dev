@@ -88,7 +88,7 @@ const NavBar = ({ bgColor }: HeaderTypes) => {
             {LOGO_KD}
             <div>
               <strong>Kudzai Mabika</strong>
-              <span>Developer.</span>
+              <span>Software Engineer.</span>
             </div>
           </LogoWrapper>
         </Link>
