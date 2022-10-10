@@ -39,38 +39,8 @@ const NavBar = ({ bgColor }: HeaderTypes) => {
     }
   }, []);
 
-  const iconVariants = {
-    opened: {
-      rotate: 135
-    },
-    closed: {
-      rotate: 0
-    }
-  };
 
-  const menuVariants = {
-    opened: {
-      top: 0,
-      transition: {
-        when: "beforeChildren",
-        staggerChildren: 0.5
-      }
-    },
-    closed: {
-      top: "-80vh"
-    }
-  };
 
-  const linkVariants = {
-    opened: {
-      opacity: 1,
-      y: 50
-    },
-    closed: {
-      opacity: 0,
-      y: 0
-    }
-  };
 
   return (
     <HeaderWrapper
