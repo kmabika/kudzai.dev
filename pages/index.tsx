@@ -21,7 +21,7 @@ const HomePage = ({metaInfo, heroTexts, projects} : Props) => {
     title={metaInfo?.mainTitle}
     description={metaInfo?.description}>
     <Hero headline={heroTexts?.headline} paragraph={heroTexts?.paragraph} />
-    <ProjectsBanner projects={projects}/>
+{/*     <ProjectsBanner projects={projects}/> */}
     </PageLayout>
   )
 }
