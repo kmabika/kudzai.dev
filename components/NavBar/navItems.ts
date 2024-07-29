@@ -9,14 +9,14 @@ export const NavItems: NavBarItemType[] = [
     route: '/',
     isExternal: false,
   },
-  {
-    label: 'Projects',
-    type: 'action',
-    onClick: () => {
-      if (window?.location?.pathname !== '/') {
-        Router.push({ pathname: '/', query: { g: 'projects' } });
-      }
-      scrollToElement('projects');
-    },
-  },
+  // {
+  //   label: 'Projects',
+  //   type: 'action',
+  //   onClick: () => {
+  //     if (window?.location?.pathname !== '/') {
+  //       Router.push({ pathname: '/', query: { g: 'projects' } });
+  //     }
+  //     scrollToElement('projects');
+  //   },
+  // },
 ];
