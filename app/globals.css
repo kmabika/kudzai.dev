@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #d5d6d0;
+  --foreground: #3d403c;
+
+  --neutral-1: #fbfaf5;
+  --neutral-2: #e0e2da;
+  --neutral-3: #c5c7be;
+  --neutral-4: #b0b3ab;
+  --neutral-5: #848780;
+  --neutral-6: #4f564d;
+  --neutral-7: #3d403c;
+  --neutral-8: #000b00;
+}
+
+html {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 1500px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  color: var(--foreground);
+  font-synthesis: none;
+  background-image: linear-gradient(180deg, var(--neutral-1), var(--neutral-2));
+  background-color: var(--neutral-1);
+}
+
+.curve svg {
+  fill: #cfd1cb;
+  z-index: 1;
+}
+
+.curve svg,
+.curve .background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: calc(100vh + 600px);
+  pointer-events: none;
+}
+
+.background {
+  background: #cfd1cb;
+  transition: opacity 0s linear 0.1s;
+  z-index: 2;
+}
