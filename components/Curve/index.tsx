@@ -11,8 +11,11 @@ const anim = (variants: { initial: { top: string } | { d: any }; enter: { top: s
   }
 }
 
-export default function Curve({ children }) {
-  const [dimensions, setDimensions] = useState({
+type ClipCurveProps = {
+  children: React.ReactNode
+}
+export default function ClipCurve({ children }: ClipCurveProps) {
+  const [dimensions, setDimensions] = useState<{width: number | null, height: number | null}>({
     width: null,
     height: null,
   })
@@ -37,13 +40,13 @@ export default function Curve({ children }) {
         style={{ opacity: dimensions.width == null ? 1 : 0 }}
         className="background"
       />
-      {dimensions.width != null && <SVG {...dimensions} />}
+      {dimensions.height != null && dimensions.width != null && <SVG height={dimensions.height} width={dimensions.width} />}
       {children}
     </div>
   )
 }
 
-const SVG = ({ height, width }) => {
+const SVG = ({ height, width }: {height: number, width: number}) => {
   const initialPath = `
         M0 300
         Q${width / 2} 0 ${width} 300

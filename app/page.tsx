@@ -1,10 +1,10 @@
 "use client"
-import Curve from "@/components/Curve"
+import ClipCurve from "@/components/Curve"
 import { motion } from "framer-motion"
 
 export default function Home() {
   return (
-    <Curve>
+    <ClipCurve>
       <div className="min-h-screen font-sans">
         <motion.div
           initial={{ y: 200 }}
@@ -26,6 +26,6 @@ export default function Home() {
           </main>
         </motion.div>
       </div>
-    </Curve>
+    </ClipCurve>
   )
 }
