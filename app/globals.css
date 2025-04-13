@@ -30,10 +30,16 @@ html {
 }
 
 body {
-  color: var(--foreground);
+  color: #fff;
   font-synthesis: none;
-  background-image: linear-gradient(180deg, var(--neutral-1), var(--neutral-2));
-  background-color: var(--neutral-1);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8) 1px, #111111 1px);
+  background-repeat: repeat;
+  background-size: 2px 2px;
+  position: absolute;
+  /* Add this to make top, width, and height work */
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .curve svg {
